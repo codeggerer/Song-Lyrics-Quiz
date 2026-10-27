@@ -103,6 +103,17 @@ The app is fully responsive and supports touch devices, notched screens, and ful
 
 ---
 
+## ⚖️ Legal & Copyright Disclaimer
+
+**Song Lyrics Quiz** is an educational, non-commercial open-source web application designed for personal entertainment and study.
+
+- **No Stored / Hosted Content:** This software and its repository do not host, store, cache, or distribute copyrighted lyrics databases or audio files.
+- **Third-Party API & User Input:** Lyrics are queried live in real time from public community APIs ([LRCLIB](https://lrclib.net)) upon client request or provided directly by the user via copy & paste.
+- **Intellectual Property:** All song titles, artist names, trademarks, and lyrical compositions remain the exclusive intellectual property of their respective song writers, artists, and music publishing rights holders.
+- **Takedown & Removal:** If you are a copyright holder and wish to address content queries, please refer directly to the upstream community data provider [LRCLIB](https://lrclib.net).
+
+---
+
 ## 📄 License
 
 This project is open-source and available under the [MIT License](LICENSE).

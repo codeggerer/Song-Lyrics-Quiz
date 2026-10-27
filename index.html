@@ -2239,6 +2239,11 @@
                 <span class="setting-label" id="setting-lbl-spieldaten" style="color:var(--danger)">Spieldaten</span>
                 <button class="btn btn-danger" id="setting-btn-reset" onclick="showConfirmReset()">Alles Löschen</button>
             </div>
+
+            <div style="margin-top: 24px; padding-top: 14px; border-top: 1px solid var(--input-border); font-size: 0.72rem; line-height: 1.5; color: var(--text-muted);">
+                <div style="font-weight: 700; margin-bottom: 4px;" id="legal-disclaimer-title">Rechtlicher Hinweis / Urheberrecht</div>
+                <div id="legal-disclaimer-text">Song Lyrics Quiz ist ein nicht-kommerzielles Open-Source-Lernspiel. Diese Anwendung speichert, hostet oder verbreitet keine geschützten Songtexte. Liedtexte werden dynamisch über freie Schnittstellen Dritter (LRCLIB) abgerufen oder direkt vom Nutzer eingefügt. Alle Rechte verbleiben bei den jeweiligen Autoren und Rechteinhabern.</div>
+            </div>
         </div>
     </div>
 
@@ -2554,6 +2559,10 @@
             <div id="lyrics-container"></div>
         </div>
     </div>
+
+    <footer style="margin: 28px auto 20px; text-align: center; font-size: 0.76rem; color: var(--text-muted); max-width: 820px; padding: 0 16px; line-height: 1.55;">
+        <span id="footer-text">Song Lyrics Quiz · Non-commercial open-source project · Lyrics queried via lrclib.net or user input. All rights belong to the copyright owners.</span>
+    </footer>
 
     <!-- Flash Overlay (Win / Lose) -->
     <div id="flash-overlay">
@@ -3004,7 +3013,10 @@
                 pageOf: "von ",
                 perWord: "pro Wort",
                 minShort: "Min.",
-                secShort: "Sek."
+                secShort: "Sek.",
+                legalDisclaimerTitle: "Rechtlicher Hinweis / Urheberrecht",
+                legalDisclaimerText: "Song Lyrics Quiz ist ein nicht-kommerzielles Open-Source-Lernspiel. Diese Anwendung speichert, hostet oder verbreitet keine geschützten Songtexte. Liedtexte werden dynamisch über freie Schnittstellen Dritter (LRCLIB) abgerufen oder direkt vom Nutzer eingefügt. Alle Rechte verbleiben bei den jeweiligen Autoren und Rechteinhabern.",
+                footerText: "Song Lyrics Quiz · Nicht-kommerzielles Open-Source-Projekt · Songtexte bereitgestellt via lrclib.net oder Nutzereingabe. Alle Rechte liegen bei den Urhebern."
             },
             en: {
                 mainTitle: "🎤 Song Lyrics Quiz",
@@ -3109,7 +3121,10 @@
                 pageOf: "of ",
                 perWord: "per word",
                 minShort: "min",
-                secShort: "s"
+                secShort: "s",
+                legalDisclaimerTitle: "Legal & Copyright Disclaimer",
+                legalDisclaimerText: "Song Lyrics Quiz is a non-commercial, open-source educational game. This application does not store, host, or distribute copyrighted lyrics. Lyrics are queried dynamically via third-party community APIs (LRCLIB) or provided by the user. All musical works and lyrics remain the sole property of their respective copyright holders.",
+                footerText: "Song Lyrics Quiz · Non-commercial open-source project · Lyrics queried via lrclib.net or user input. All rights belong to the copyright owners."
             },
             es: {
                 mainTitle: "🎤 Quiz de Letras",
@@ -3214,7 +3229,10 @@
                 pageOf: "de ",
                 perWord: "por palabra",
                 minShort: "min",
-                secShort: "s"
+                secShort: "s",
+                legalDisclaimerTitle: "Aviso Legal y Derechos de Autor",
+                legalDisclaimerText: "Song Lyrics Quiz es un juego educativo de código abierto y no comercial. Esta aplicación no almacena, aloja ni distribuye letras protegidas por derechos de autor. Las letras se consultan dinámicamente a través de API comunitarias de terceros (LRCLIB) o las introduce el usuario. Todos los derechos pertenecen a sus respectivos autores y editoriales.",
+                footerText: "Song Lyrics Quiz · Proyecto no comercial de código abierto · Letras consultadas vía lrclib.net o entrada del usuario. Todos los derechos pertenecen a los autores."
             },
             fr: {
                 mainTitle: "🎤 Quiz Paroles",
@@ -3319,7 +3337,10 @@
                 pageOf: "sur ",
                 perWord: "par mot",
                 minShort: "min",
-                secShort: "s"
+                secShort: "s",
+                legalDisclaimerTitle: "Avis juridique & Droits d'auteur",
+                legalDisclaimerText: "Song Lyrics Quiz est un jeu éducatif open source et non commercial. Cette application ne stocke, n'héberge ni ne distribue de paroles protégées par le droit d'auteur. Les paroles sont récupérées dynamiquement via des API communautaires tierces (LRCLIB) ou saisies par l'utilisateur. Tous les droits appartiennent aux ayants droit respectifs.",
+                footerText: "Song Lyrics Quiz · Projet open source non commercial · Paroles via lrclib.net ou saisie utilisateur. Tous droits réservés aux auteurs."
             }
         };
 
@@ -3601,6 +3622,9 @@
             setText('setting-lbl-unlockall', 'unlockAllLabel');
             setText('setting-lbl-spieldaten', 'spieldatenLabel');
             setText('setting-btn-reset', 'btnReset');
+            setText('legal-disclaimer-title', 'legalDisclaimerTitle');
+            setText('legal-disclaimer-text', 'legalDisclaimerText');
+            setText('footer-text', 'footerText');
 
             updateSuddenSteppersUI();
 
